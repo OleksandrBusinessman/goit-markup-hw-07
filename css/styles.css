@@ -15,6 +15,7 @@ rgba(255, 255, 255, 0.6);
 font-family: 'Raleway', sans-serif;
 font-family: 'Roboto', sans-serif; */
 
+/* Змінні */
 :root {
   --card-set-gap: 30px;
   --anim-dur: 500ms;
@@ -30,20 +31,12 @@ font-family: 'Roboto', sans-serif; */
   --button-active-color: #188ce8;
   --icon-bgcolor: #afb1b8;
 }
+
+/* Утиліти */
 body {
   font-family: 'Roboto', sans-serif;
   color: var(--main-text-color);
   background-color: var(--white-color);
-}
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
-  margin-top: 0;
-  margin-bottom: 0;
 }
 .section {
   padding-top: 94px;
@@ -69,6 +62,16 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
 }
 .visually-hidden {
   position: absolute;
