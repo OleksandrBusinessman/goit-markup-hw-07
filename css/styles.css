@@ -165,10 +165,10 @@ img {
   opacity: 1;
   transform: scaleX(1);
 }
-.site-nav__link.current {
+.site-nav__link--current {
   color: var(--turquoise-color);
 }
-.site-nav__link.current::after {
+.site-nav__link--current::after {
   content: '';
 
   position: absolute;
