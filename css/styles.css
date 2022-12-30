@@ -358,16 +358,22 @@ p {
   background: rgba(47, 48, 58, 0.8);
 }
 
-/* --------------- */
-
 /* Секція Наша команда */
-.team {
+.our-team {
+  background-color: var(--section-light-color);
+}
+.our-team__title {
+  margin-bottom: 50px;
+
+  text-align: center;
+}
+.card {
   display: flex;
   flex-wrap: wrap;
   margin-top: calc(-1 * var(--card-set-gap));
   margin-left: calc(-1 * var(--card-set-gap));
 }
-.team > .item {
+.card__item {
   margin-top: var(--card-set-gap);
   margin-left: var(--card-set-gap);
   flex-basis: calc(100% / 4 - var(--card-set-gap));
@@ -377,49 +383,42 @@ p {
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
-.team .title {
+.card__box {
+  padding: 30px;
+  background-color: var(--white-color);
+}
+.card__title {
   margin-bottom: 10px;
 
   font-weight: 500;
   font-size: 16px;
   line-height: calc(19 / 16);
   text-align: center;
+  letter-spacing: 0.03em;
+
+  color: var(--nav-title-color);
 }
-.team p {
+.card__desc {
+  margin-bottom: 16px;
+
   font-size: 16px;
   line-height: 19px;
   letter-spacing: 0.03em;
   text-align: center;
 }
-.card {
-  padding: 30px;
-  background-color: var(--white-color);
-}
-.team-team {
-  margin-bottom: 50px;
-}
-.our-team .team-team {
-  text-align: center;
-}
-.our-team {
-  background-color: var(--section-light-color);
-}
-.item .paragraf {
-  margin-bottom: 16px;
-}
-
-.card .list {
+.social-networks {
   display: flex;
   color: var(--icon-bgcolor);
 }
-.card .item:not(:last-child) {
-  margin-right: 10px;
-}
-.card .item {
+.social-networks__item {
   display: flex;
+
   border-radius: 50%;
 }
-.card .link {
+.social-networks__item:not(:last-child) {
+  margin-right: 10px;
+}
+.social-networks__link {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -431,14 +430,16 @@ p {
   transition: color var(--anim-dur) var(--main-cubic),
     background-color var(--anim-dur) var(--main-cubic);
 }
-.card .link:hover,
-.card .link:focus {
+.social-networks__link:hover,
+.social-networks__link:focus {
   color: var(--white-color);
   background-color: var(--turquoise-color);
 }
-.card .icon {
+.social-networks__icon {
   fill: currentColor;
 }
+
+/* --------------- */
 
 /* Секція постійні клієнти */
 .section.regular-customers {
