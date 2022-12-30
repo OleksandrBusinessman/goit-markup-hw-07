@@ -86,6 +86,22 @@ p {
   margin: -1px;
 }
 
+/* Компоненти */
+.logo {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: calc(31 / 26);
+  letter-spacing: 0.03em;
+}
+.section-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: calc(42 / 36);
+  letter-spacing: 0.03em;
+  color: var(--nav-title-color);
+}
+
 /* Хедер */
 .header {
   border-bottom: 1px solid #ececec;
@@ -101,13 +117,6 @@ p {
 }
 
 /* Хедер лого */
-.logo {
-  font-family: 'Raleway', sans-serif;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: calc(31 / 26);
-  letter-spacing: 0.03em;
-}
 .header__logo {
   display: block;
   padding-top: 24px;
@@ -274,42 +283,19 @@ p {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
-/* --------------- */
-
 /* Секція наші сильні якості */
-.section .title {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: calc(42 / 36);
-  letter-spacing: 0.03em;
-  color: var(--nav-title-color);
-}
-.strengths .title {
-  margin-bottom: 10px;
-
-  font-size: 14px;
-  line-height: calc(16 / 14);
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-}
-.strengths p {
-  font-size: 14px;
-  line-height: calc(24 / 14);
-  letter-spacing: 0.03em;
-}
 .strengths {
   display: flex;
   flex-wrap: wrap;
   margin-top: calc(-1 * var(--card-set-gap));
   margin-left: calc(-1 * var(--card-set-gap));
 }
-.strengths .item {
+.strengths__item {
   margin-top: var(--card-set-gap);
   margin-left: var(--card-set-gap);
   flex-basis: calc(100% / 4 - var(--card-set-gap));
 }
-
-.strengths .cont-icon {
+.strengths__icon-wrap {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -320,6 +306,23 @@ p {
   background-color: var(--section-light-color);
   border-radius: 4px;
 }
+.strengths__title {
+  margin-bottom: 10px;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--nav-title-color);
+}
+.strengths__desc {
+  font-size: 14px;
+  line-height: calc(24 / 14);
+  letter-spacing: 0.03em;
+}
+
+/* --------------- */
 
 /* Секція чим ми займаємося */
 .foto {
