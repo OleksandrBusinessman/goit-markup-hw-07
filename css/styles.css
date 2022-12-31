@@ -18,7 +18,7 @@ font-family: 'Roboto', sans-serif; */
 /* Змінні */
 :root {
   --card-set-gap: 30px;
-  --anim-dur: 500ms;
+  --anim-dur: 250ms;
   --main-cubic: cubic-bezier(0.4, 0, 0.2, 1);
   --main-text-color: #757575;
   --turquoise-color: #2196f3;
