@@ -830,9 +830,47 @@ p {
   fill: var(--turquoise-color);
 }
 
+/* Форма модалки */
+.form-modal__text {
+  text-align: center;
+  margin-bottom: 12px;
+
+  font-weight: 700;
+  font-size: 20px;
+  line-height: calc(23 / 20);
+  letter-spacing: 0.03em;
+
+  color: var(--nav-title-color);
+}
+.form-modal__button {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+  width: 200px;
+  height: 50px;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: calc(30 / 16);
+  letter-spacing: 0.06em;
+
+  cursor: pointer;
+  border-radius: 4px;
+  background-color: var(--turquoise-color);
+  border-color: transparent;
+  color: var(--white-color);
+  transition: background-color var(--anim-dur) var(--main-cubic),
+    box-shadow var(--anim-dur) var(--main-cubic);
+}
+.form-modal__button:hover,
+.form-modal__button:focus {
+  background-color: var(--button-active-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
 /* --------------- */
 
-/* Форма модалки */
 .data-list .item:not(:last-child) {
   display: flex;
   flex-direction: column;
@@ -850,17 +888,7 @@ p {
   justify-content: center;
   margin-bottom: 30px;
 }
-.form-modal p {
-  text-align: center;
-  margin-bottom: 12px;
 
-  font-weight: 700;
-  font-size: 20px;
-  line-height: calc(23 / 20);
-  letter-spacing: 0.03em;
-
-  color: var(--nav-title-color);
-}
 .item label:not(:last-child) {
   margin-bottom: 4px;
 
@@ -965,30 +993,4 @@ p {
 .form-modal .link {
   text-decoration: underline;
   color: var(--turquoise-color);
-}
-.form-modal .button-modal {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-
-  width: 200px;
-  height: 50px;
-
-  font-weight: 700;
-  font-size: 16px;
-  line-height: calc(30 / 16);
-  letter-spacing: 0.06em;
-
-  cursor: pointer;
-  border-radius: 4px;
-  background-color: var(--turquoise-color);
-  border-color: transparent;
-  color: var(--white-color);
-  transition: background-color var(--anim-dur) var(--main-cubic),
-    box-shadow var(--anim-dur) var(--main-cubic);
-}
-.form-modal .button-modal:hover,
-.form-modal .button-modal:focus {
-  background-color: var(--button-active-color);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
