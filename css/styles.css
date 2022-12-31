@@ -766,9 +766,7 @@ p {
   margin-left: 10px;
 }
 
-/* --------------- */
-
-/* backdrop */
+/* Бекдроп */
 .backdrop {
   position: fixed;
   top: 0;
@@ -787,7 +785,7 @@ p {
   pointer-events: none;
 }
 
-/* modal window */
+/* Модальне вікно */
 .modal {
   position: absolute;
   top: 50%;
@@ -806,8 +804,8 @@ p {
   transform: translate(-50%, -50%) scale(0.7);
 }
 
-/* кнопка модалки */
-.backdrop .button {
+/* Кнопка закрити модалку  */
+.button-close {
   position: absolute;
   top: 8px;
   right: 8px;
@@ -827,10 +825,12 @@ p {
   transition: fill var(--anim-dur) var(--main-cubic);
 }
 
-.backdrop .button:hover,
-.backdrop .button:focus {
+.button-close:hover,
+.button-close:focus {
   fill: var(--turquoise-color);
 }
+
+/* --------------- */
 
 /* Форма модалки */
 .data-list .item:not(:last-child) {
