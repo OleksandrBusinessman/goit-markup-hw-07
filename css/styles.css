@@ -766,7 +766,9 @@ p {
   margin-left: 10px;
 }
 
-/* Бекдроп */
+/* --------------- */
+
+/* backdrop */
 .backdrop {
   position: fixed;
   top: 0;
@@ -780,15 +782,12 @@ p {
 
   background-color: rgba(0, 0, 0, 0.2);
 }
-.backdrop--is-hidden {
+.backdrop.is-hidden {
   opacity: 0;
   pointer-events: none;
 }
 
-/* Модальне вікно */
-
-/* --------------- */
-
+/* modal window */
 .modal {
   position: absolute;
   top: 50%;
@@ -803,7 +802,7 @@ p {
   transition: transform var(--anim-dur) var(--main-cubic);
   background-color: var(--white-color);
 }
-.backdrop--is-hidden .modal {
+.backdrop.is-hidden .modal {
   transform: translate(-50%, -50%) scale(0.7);
 }
 
