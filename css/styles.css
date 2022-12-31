@@ -555,9 +555,9 @@ p {
   width: 100%;
   height: 100%;
 
+  background-color: rgba(33, 150, 243, 0.9);
   transform: translateY(101%);
   transition: transform var(--anim-dur) var(--main-cubic);
-  background-color: rgba(33, 150, 243, 0.9);
 }
 .examples__link:hover .project__overlay,
 .examples__link:focus .project__overlay {
