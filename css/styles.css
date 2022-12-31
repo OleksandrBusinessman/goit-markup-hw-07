@@ -516,8 +516,6 @@ p {
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
-/* --------------- */
-
 /* Секція приклади наших робіт */
 .examples {
   display: flex;
@@ -525,43 +523,22 @@ p {
   margin-top: calc(-1 * var(--card-set-gap));
   margin-left: calc(-1 * var(--card-set-gap));
 }
-.examples .item {
+.examples__item {
   margin-top: var(--card-set-gap);
   margin-left: var(--card-set-gap);
   flex-basis: calc(100% / 3 - var(--card-set-gap));
 }
-.examples .link {
+.examples__link {
   display: block;
 
   transition: box-shadow var(--anim-dur) var(--main-cubic);
 }
-.examples .link:hover,
-.examples .link:focus {
+.examples__link:hover,
+.examples__link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
-.examples .title {
-  margin-bottom: 4px;
-
-  font-size: 18px;
-  line-height: calc(36 / 18);
-  letter-spacing: 0.06em;
-}
-.examples p {
-  font-size: 16px;
-  line-height: calc(30 / 16);
-  letter-spacing: 0.03em;
-}
-.signature {
-  padding: 20px 24px;
-  border-right: 1px solid #eeeeee;
-  border-bottom: 1px solid #eeeeee;
-  border-left: 1px solid #eeeeee;
-
-  width: 370px;
-  height: 110px;
-}
-.examples .thumb {
+.project {
   position: relative;
 
   width: 370px;
@@ -569,7 +546,7 @@ p {
 
   overflow: hidden;
 }
-.examples .overlay {
+.project__overlay {
   position: absolute;
   left: 0;
   bottom: 0;
@@ -582,17 +559,40 @@ p {
   transition: transform var(--anim-dur) var(--main-cubic);
   background-color: rgba(33, 150, 243, 0.9);
 }
-.examples .link:hover .overlay,
-.examples .link:focus .overlay {
+.examples__link:hover .project__overlay,
+.examples__link:focus .project__overlay {
   transform: translateY(0);
 }
-.overlay p {
+.project__overlay-text {
   font-size: 18px;
   line-height: calc(28 / 18);
   letter-spacing: 0.03em;
 
   color: var(--white-color);
 }
+.project__sign {
+  padding: 20px 24px;
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
+
+  width: 370px;
+  height: 110px;
+}
+.project__title {
+  margin-bottom: 4px;
+
+  font-size: 18px;
+  line-height: calc(36 / 18);
+  letter-spacing: 0.06em;
+}
+.project__text {
+  font-size: 16px;
+  line-height: calc(30 / 16);
+  letter-spacing: 0.03em;
+}
+
+/* --------------- */
 
 /* footer */
 .footer .blok {
