@@ -95,7 +95,13 @@ p {
   letter-spacing: 0.03em;
   color: var(--nav-title-color);
 }
-
+.title-uppercase {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
 /* Хедер */
 .header {
   border-bottom: 1px solid #ececec;
@@ -299,11 +305,6 @@ p {
 .strengths__title {
   margin-bottom: 10px;
 
-  font-weight: 700;
-  font-size: 14px;
-  line-height: calc(16 / 14);
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
   color: var(--nav-title-color);
 }
 .strengths__desc {
