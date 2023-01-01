@@ -86,6 +86,9 @@ p {
 
 /* Секція */
 .section-title {
+  margin-bottom: 50px;
+
+  text-align: center;
   font-weight: 700;
   font-size: 36px;
   line-height: calc(42 / 36);
@@ -313,10 +316,6 @@ p {
 .we-do {
   padding-top: 0;
 }
-.we-do__title {
-  margin-bottom: 50px;
-  text-align: center;
-}
 .img {
   display: flex;
   flex-wrap: wrap;
@@ -348,11 +347,6 @@ p {
 /* Секція Наша команда */
 .our-team {
   background-color: var(--section-light-color);
-}
-.our-team__title {
-  margin-bottom: 50px;
-
-  text-align: center;
 }
 .card {
   display: flex;
@@ -431,11 +425,7 @@ p {
   background-color: var(--white-color);
 }
 .regular-customers__container {
-  text-align: center;
   background-color: var(--white-color);
-}
-.regular-customers__title {
-  margin-bottom: 50px;
 }
 .regular-customers__list {
   display: flex;
