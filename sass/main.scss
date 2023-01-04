@@ -1,1 +1,56 @@
-@import "./base/normalize";
+// Утиліти
+@import './base/normalize';
+@import './utils/variables';
+@import './utils/reset';
+@import './utils/visually-hidden';
+
+// Базові налаштування
+@import './base/basic-settings';
+
+// Компоненти які перевикористовуються
+@import './reuse/logo';
+@import './reuse/section-title';
+@import './reuse/title-uppercase';
+@import './reuse/button';
+@import './reuse/social-networks';
+
+// Компоненти
+// Хедер
+@import './components/header';
+@import './components/header-logo';
+@import './components/header-site-nav';
+@import './components/header-contacts';
+
+// Блок герой !
+@import './components/block-hero';
+
+// Секція наші сильні якості
+@import './components/section-strengths';
+
+// Секція чим ми займаємося
+@import './components/section-we-do';
+
+// Секція Наша команда
+@import './components/section-our-team';
+
+// Секція постійні клієнти
+@import './components/section-regular-customers';
+
+// Футер
+@import './components/footer';
+@import './components/footer-logo';
+@import './components/footer-contacts';
+@import './components/footer-social-networks';
+@import './components/footer-form';
+
+// Бекдроп
+@import './components/backdrop';
+
+// Модальне вікно
+@import './components/modal';
+
+// Кнопка закрити модалку
+@import './components/modal-button-close';
+
+// Форма модалки
+@import './components/modal-form';

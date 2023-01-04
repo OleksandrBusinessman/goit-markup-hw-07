@@ -1,1 +1,34 @@
-@import "./base/normalize";
+// Утиліти
+@import './base/normalize';
+@import './utils/variables';
+@import './utils/reset';
+@import './utils/visually-hidden';
+
+// Базові налаштування
+@import './base/basic-settings';
+
+// Компоненти які перевикористовуються
+@import './reuse/logo';
+@import './reuse/button';
+@import './reuse/title-uppercase';
+@import './reuse/social-networks';
+
+// Компоненти
+// Хедер
+@import './components/header';
+@import './components/header-logo';
+@import './components/header-site-nav';
+@import './components/header-contacts';
+
+// Фільтри
+@import './components/section-filters';
+
+// Секція приклади наших робіт
+@import './components/section-examples';
+
+// Футер
+@import './components/footer';
+@import './components/footer-logo';
+@import './components/footer-contacts';
+@import './components/footer-social-networks';
+@import './components/footer-form';

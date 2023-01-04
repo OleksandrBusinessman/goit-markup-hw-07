@@ -1,0 +1,14 @@
+/* Хедер */
+.header {
+    border-bottom: 1px solid var(--color-header-strip);
+}
+
+/* Хедер головна навігація */
+.header__nav-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.header__nav {
+    display: flex;
+}

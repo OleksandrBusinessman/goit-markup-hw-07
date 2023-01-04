@@ -1,0 +1,16 @@
+/* Футер */
+.footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    background-color: var(--color-bg-dark);
+}
+
+.footer__container {
+    display: flex;
+    align-items: baseline;
+}
+
+.footer__blok {
+    margin-right: 70px;
+}
