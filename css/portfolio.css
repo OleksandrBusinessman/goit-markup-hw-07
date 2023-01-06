@@ -352,8 +352,7 @@ img {
   line-height: 1.1923076923;
   letter-spacing: 0.03em;
 }
-
-.logo__web {
+.logo .logo__web {
   color: var(--color-accent);
 }
 
@@ -375,9 +374,7 @@ img {
   transition: background-color var(--anim-dur) var(--main-cubic), box-shadow var(--anim-dur) var(--main-cubic);
   transition: background-color var(--anim-dur) var(--main-cubic), box-shadow var(--anim-dur) var(--main-cubic), -webkit-box-shadow var(--anim-dur) var(--main-cubic);
 }
-
-.button:hover,
-.button:focus {
+.button:hover, .button:focus {
   background-color: var(--color-button-active);
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -399,20 +396,14 @@ img {
   display: flex;
   color: var(--color-icon-bg);
 }
-
-.social-networks__item {
+.social-networks .social-networks__item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   border-radius: 50%;
 }
-
-.social-networks__item:not(:last-child) {
+.social-networks .social-networks__item:not(:last-child) {
   margin-right: 10px;
-}
-
-.social-networks__icon {
-  fill: currentColor;
 }
 
 .social-networks__link {
@@ -431,11 +422,12 @@ img {
   -webkit-transition: color var(--anim-dur) var(--main-cubic), background-color var(--anim-dur) var(--main-cubic);
   transition: color var(--anim-dur) var(--main-cubic), background-color var(--anim-dur) var(--main-cubic);
 }
-
-.social-networks__link:hover,
-.social-networks__link:focus {
+.social-networks__link:hover, .social-networks__link:focus {
   color: var(--color-white);
   background-color: var(--color-accent);
+}
+.social-networks__link .social-networks__icon {
+  fill: currentColor;
 }
 
 /* Хедер */
@@ -473,7 +465,7 @@ img {
   display: -ms-flexbox;
   display: flex;
 }
-.site-nav__item:not(:last-child) {
+.site-nav .site-nav__item:not(:last-child) {
   margin-right: 50px;
 }
 
@@ -516,7 +508,7 @@ img {
   -webkit-transform: scaleX(1);
           transform: scaleX(1);
 }
-.site-nav__link .site-nav__link--current {
+.site-nav__link--current {
   color: var(--color-accent);
 }
 .site-nav__link--current::after {
@@ -541,10 +533,11 @@ img {
   display: flex;
   margin-left: auto;
 }
-.header-contacts__item:not(:last-child) {
+.header-contacts .header-contacts__item:not(:last-child) {
   margin-right: 30px;
 }
-.header-contacts .header-contacts__link {
+
+.header-contacts__link {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -564,7 +557,7 @@ img {
 .header-contacts__link:hover, .header-contacts__link:focus {
   color: var(--color-accent);
 }
-.header-contacts .header-contacts__icon {
+.header-contacts__link .header-contacts__icon {
   margin-right: 10px;
   fill: currentColor;
 }
@@ -579,8 +572,7 @@ img {
           justify-content: center;
   margin-bottom: 50px;
 }
-
-.filters__item:not(:last-child) {
+.filters .filters__item:not(:last-child) {
   margin-right: 8px;
 }
 
@@ -601,9 +593,7 @@ img {
   transition: color var(--anim-dur) var(--main-cubic), background-color var(--anim-dur) var(--main-cubic), box-shadow var(--anim-dur) var(--main-cubic);
   transition: color var(--anim-dur) var(--main-cubic), background-color var(--anim-dur) var(--main-cubic), box-shadow var(--anim-dur) var(--main-cubic), -webkit-box-shadow var(--anim-dur) var(--main-cubic);
 }
-
-.filters__button:hover,
-.filters__button:focus {
+.filters__button:hover, .filters__button:focus {
   color: var(--color-white);
   background-color: var(--color-accent);
   -webkit-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
@@ -620,8 +610,7 @@ img {
   margin-top: calc(-1 * var(--card-set-gap));
   margin-left: calc(-1 * var(--card-set-gap));
 }
-
-.examples__item {
+.examples .examples__item {
   margin-top: var(--card-set-gap);
   margin-left: var(--card-set-gap);
   -ms-flex-preferred-size: calc(33.3333333333% - var(--card-set-gap));
@@ -666,8 +655,7 @@ img {
   -webkit-transform: translateY(0);
           transform: translateY(0);
 }
-
-.project__overlay-text {
+.project__overlay .project__overlay-text {
   font-size: 18px;
   line-height: 1.5555555556;
   letter-spacing: 0.03em;
@@ -682,16 +670,14 @@ img {
   width: 370px;
   height: 110px;
 }
-
-.project__title {
+.project__sign .project__title {
   margin-bottom: 4px;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--color-secondary);
 }
-
-.project__text {
+.project__sign .project__text {
   font-size: 16px;
   line-height: 1.875;
   letter-spacing: 0.03em;

@@ -3,32 +3,32 @@
     display: flex;
     margin-left: auto;
 
-    &__item:not(:last-child) {
+    .header-contacts__item:not(:last-child) {
             margin-right: 30px;
         }
-    
-        .header-contacts__link {
-            display: flex;
-            align-items: center;
-            padding-top: 32px;
-            padding-bottom: 32px;
-    
-            font-weight: 500;
-            font-size: 14px;
-            line-height: calc(16 / 14);
-            letter-spacing: 0.02em;
-    
-            color: var(--color-primary);
-            transition: color var(--anim-dur) var(--main-cubic);
-        }
-    
-        &__link:hover,
-        &__link:focus {
+}
+
+.header-contacts__link {
+    display: flex;
+    align-items: center;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    font-weight: 500;
+    font-size: 14px;
+    line-height: calc(16 / 14);
+    letter-spacing: 0.02em;
+
+    color: var(--color-primary);
+    transition: color var(--anim-dur) var(--main-cubic);
+
+    &:hover,
+        &:focus {
             color: var(--color-accent);
         }
-    
-        .header-contacts__icon {
-            margin-right: 10px;
-            fill: currentColor;
-        }
+
+                 .header-contacts__icon {
+                     margin-right: 10px;
+                     fill: currentColor;
+                 }
 }

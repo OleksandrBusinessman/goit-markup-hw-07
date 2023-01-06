@@ -2,7 +2,7 @@
 .site-nav {
     display: flex;
 
-    &__item:not(:last-child) {
+    .site-nav__item:not(:last-child) {
             margin-right: 50px;
         }
 }
@@ -50,7 +50,7 @@
             transform: scaleX(1);
         }
     
-        .site-nav__link--current {
+        &--current {
             color: var(--color-accent);
         }
     

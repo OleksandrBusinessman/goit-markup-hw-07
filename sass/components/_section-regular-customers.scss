@@ -5,14 +5,14 @@
     .regular-customers__container {
             background-color: var(--color-white);
         }
-    
-        .regular-customers__list {
-            display: flex;
-        }
+}
 
-                .regular-customers__item:not(:last-child) {
-                    margin-right: 30px;
-                }
+.regular-customers__list {
+    display: flex;
+
+    .regular-customers__item:not(:last-child) {
+        margin-right: 30px;
+    }
 }
 
 .regular-customers__item {

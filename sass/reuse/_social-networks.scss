@@ -2,19 +2,15 @@
 .social-networks {
     display: flex;
     color: var(--color-icon-bg);
-}
 
-.social-networks__item {
-    display: flex;
-    border-radius: 50%;
-}
-
-.social-networks__item:not(:last-child) {
-    margin-right: 10px;
-}
-
-.social-networks__icon {
-    fill: currentColor;
+    .social-networks__item {
+            display: flex;
+            border-radius: 50%;
+        }
+    
+        .social-networks__item:not(:last-child) {
+            margin-right: 10px;
+        }
 }
 
 .social-networks__link {
@@ -28,10 +24,14 @@
 
     transition: color var(--anim-dur) var(--main-cubic),
         background-color var(--anim-dur) var(--main-cubic);
-}
 
-.social-networks__link:hover,
-.social-networks__link:focus {
-    color: var(--color-white);
-    background-color: var(--color-accent);
+        &:hover,
+            &:focus {
+                color: var(--color-white);
+                background-color: var(--color-accent);
+            }
+
+                        .social-networks__icon {
+                            fill: currentColor;
+                        }
 }
