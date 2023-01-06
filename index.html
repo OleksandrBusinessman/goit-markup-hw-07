@@ -10,7 +10,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
     rel="stylesheet" />
-  <link rel="stylesheet" href="./css/main.min.css">
+  <link rel="stylesheet" href="./css/main.min.css" />
 </head>
 
 <body>
@@ -144,8 +144,8 @@
     <section class="our-team section">
       <div class="container">
         <h2 class="section-title">Наша команда</h2>
-        <ul class="card list">
-          <li class="card__item">
+        <ul class="cards-list list">
+          <li class="cards-list__item">
             <img src="./images/igor-dem.jpg" alt="Чоловік у коричневій сорочці і окулярах" width="270" height="260" />
             <div class="card__box">
               <h3 class="card__title">Ігор Дем'яненко</h3>
@@ -178,7 +178,7 @@
               </ul>
             </div>
           </li>
-          <li class="card__item">
+          <li class="cards-list__item">
             <img src="./images/olga-rep.jpg" alt="Молода дівчина в окулярах з світлим волоссям" width="270"
               height="260" />
             <div class="card__box">
@@ -212,7 +212,7 @@
               </ul>
             </div>
           </li>
-          <li class="card__item">
+          <li class="cards-list__item">
             <img src="./images/mykola-tarasov.jpg" alt="Чоловік у світлій сорочці посміхається" width="270"
               height="260" />
             <div class="card__box">
@@ -246,7 +246,7 @@
               </ul>
             </div>
           </li>
-          <li class="card__item">
+          <li class="cards-list__item">
             <img src="./images/myh-ermak.jpg" alt="Брюнет в чорній сорочці і окулярах" width="270" height="260" />
             <div class="card__box">
               <h3 class="card__title">Михайло Єрмаков</h3>
@@ -346,8 +346,9 @@
             <li class="footer-contacts__item">
               <a href="mailto:info@devstudio.com" class="footer-contacts__link link">info@devstudio.com</a>
             </li>
-            <li class="footer-contacts__item"><a href="tel:+380961111111" class="footer-contacts__link link">+38 096 111
-                11 11</a></li>
+            <li class="footer-contacts__item">
+              <a href="tel:+380961111111" class="footer-contacts__link link">+38 096 111 11 11</a>
+            </li>
           </ul>
         </address>
       </div>
@@ -385,7 +386,7 @@
       <!-- Футер форма підпишіться на розсилку -->
       <form class="footer-form">
         <p class="footer-form__text title-uppercase">Підпишіться на розсилку</p>
-        <div class="footer-form__email">
+        <div class="footer-form__box">
           <input class="footer-form__input" type="email" name="email-footer" placeholder="E-mail" />
           <button class="button footer-form__button" type="submit">
             Підписатися<svg class="button__icon" width="24" height="24">
@@ -413,34 +414,34 @@
         <p class="form-modal__text">Залиште свої дані, ми вам передзвонимо</p>
         <ul class="data-list list">
           <li class="data-list__item">
-            <label class="data-list__label" for="name">Ім'я</label>
-            <div class="data-list__box">
-              <input class="data-list__input" type="text" name="name" id="name" placeholder=" " />
-              <svg class="data-list__icon" width="18" height="18">
+            <label class="data-list__item-label" for="name">Ім'я</label>
+            <div class="data-list__item-box">
+              <input class="data-list__item-input" type="text" name="name" id="name" placeholder=" " />
+              <svg class="data-list__item-icon" width="18" height="18">
                 <use href="./images/icons.svg#icon-person-black"></use>
               </svg>
             </div>
           </li>
           <li class="data-list__item">
-            <label class="data-list__label" for="tel">Телефон</label>
-            <div class="data-list__box">
-              <input class="data-list__input" type="tel" name="tel" id="tel" placeholder=" " />
-              <svg class="data-list__icon" width="18" height="18">
+            <label class="data-list__item-label" for="tel">Телефон</label>
+            <div class="data-list__item-box">
+              <input class="data-list__item-input" type="tel" name="tel" id="tel" placeholder=" " />
+              <svg class="data-list__item-icon" width="18" height="18">
                 <use href="./images/icons.svg#icon-phone-black"></use>
               </svg>
             </div>
           </li>
           <li class="data-list__item">
-            <label class="data-list__label" for="email">Пошта</label>
-            <div class="data-list__box">
-              <input class="data-list__input" type="email" name="email" id="email" placeholder=" " />
-              <svg class="data-list__icon" width="18" height="18">
+            <label class="data-list__item-label" for="email">Пошта</label>
+            <div class="data-list__item-box">
+              <input class="data-list__item-input" type="email" name="email" id="email" placeholder=" " />
+              <svg class="data-list__item-icon" width="18" height="18">
                 <use href="./images/icons.svg#icon-email-black"></use>
               </svg>
             </div>
           </li>
           <li class="data-list__item">
-            <label class="data-list__label" for="comment">Коментар</label>
+            <label class="data-list__item-label" for="comment">Коментар</label>
             <textarea class="data-list__textarea" name="comment" id="comment" placeholder="Введіть текст"></textarea>
           </li>
           <li class="data-list__item">

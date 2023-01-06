@@ -1,10 +1,10 @@
 /* Хедер навігація по сайту */
 .site-nav {
     display: flex;
-}
 
-.site-nav__item:not(:last-child) {
-    margin-right: 50px;
+    &__item:not(:last-child) {
+            margin-right: 50px;
+        }
 }
 
 .site-nav__link {
@@ -20,54 +20,54 @@
 
     color: var(--color-secondary);
     transition: color var(--anim-dur) var(--main-cubic);
-}
 
-.site-nav__link:hover,
-.site-nav__link:focus {
-    color: var(--color-accent);
-}
-
-.site-nav__link::after {
-    content: '';
-
-    position: absolute;
-    display: block;
-    left: 0;
-    bottom: -1px;
-
-    width: 100%;
-    height: 4px;
-    border-radius: 2px;
-
-    background-color: var(--color-accent);
-    opacity: 0;
-    transform: scaleX(0);
-    transition: opacity var(--anim-dur) var(--main-cubic), transform var(--anim-dur) var(--main-cubic);
-}
-
-.site-nav__link:hover::after,
-.site-nav__link:focus::after {
-    opacity: 1;
-    transform: scaleX(1);
-}
-
-.site-nav__link--current {
-    color: var(--color-accent);
-}
-
-.site-nav__link--current::after {
-    content: '';
-
-    position: absolute;
-    display: block;
-    left: 0;
-    bottom: -1px;
-
-    width: 100%;
-    height: 4px;
-    border-radius: 2px;
-
-    background-color: var(--color-accent);
-    opacity: 1;
-    transform: scaleX(1);
+    &:hover,
+        &:focus {
+            color: var(--color-accent);
+        }
+    
+        &::after {
+            content: '';
+    
+            position: absolute;
+            display: block;
+            left: 0;
+            bottom: -1px;
+    
+            width: 100%;
+            height: 4px;
+            border-radius: 2px;
+    
+            background-color: var(--color-accent);
+            opacity: 0;
+            transform: scaleX(0);
+            transition: opacity var(--anim-dur) var(--main-cubic), transform var(--anim-dur) var(--main-cubic);
+        }
+    
+        &:hover::after,
+        &:focus::after {
+            opacity: 1;
+            transform: scaleX(1);
+        }
+    
+        .site-nav__link--current {
+            color: var(--color-accent);
+        }
+    
+        &--current::after {
+            content: '';
+    
+            position: absolute;
+            display: block;
+            left: 0;
+            bottom: -1px;
+    
+            width: 100%;
+            height: 4px;
+            border-radius: 2px;
+    
+            background-color: var(--color-accent);
+            opacity: 1;
+            transform: scaleX(1);
+        }
 }

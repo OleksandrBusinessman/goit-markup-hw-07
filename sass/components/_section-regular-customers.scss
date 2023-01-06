@@ -1,23 +1,27 @@
 /* Секція постійні клієнти */
 .regular-customers {
     background-color: var(--color-white);
-}
 
-.regular-customers__container {
-    background-color: var(--color-white);
-}
+    .regular-customers__container {
+            background-color: var(--color-white);
+        }
+    
+        .regular-customers__list {
+            display: flex;
+        }
 
-.regular-customers__list {
-    display: flex;
+                .regular-customers__item:not(:last-child) {
+                    margin-right: 30px;
+                }
 }
 
 .regular-customers__item {
     background-color: var(--color-white);
     color: var(--color-icon-bg);
-}
 
-.regular-customers__item:not(:last-child) {
-    margin-right: 30px;
+    .regular-customers__icon {
+            fill: currentColor;
+        }
 }
 
 .regular-customers__link {
@@ -32,14 +36,10 @@
 
     transition: color var(--anim-dur) var(--main-cubic),
         border-color var(--anim-dur) var(--main-cubic);
-}
 
-.regular-customers__link:hover,
-.regular-customers__link:focus {
-    color: var(--color-accent);
-    border-color: var(--color-accent);
-}
-
-.regular-customers__icon {
-    fill: currentColor;
+        &:hover,
+            &:focus {
+                color: var(--color-accent);
+                border-color: var(--color-accent);
+            }
 }
