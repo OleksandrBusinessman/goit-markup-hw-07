@@ -281,7 +281,7 @@ summary {
 }
 
 /* Скидання налаштувань за замовчуванням */
-.list {
+.social-networks, .footer-contacts, .examples, .filters, .header-contacts, .site-nav {
   list-style: none;
   padding-left: 0;
   margin: 0;

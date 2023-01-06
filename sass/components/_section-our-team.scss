@@ -3,6 +3,8 @@
   background-color: var(--color-bg-light);
 
   .cards-list {
+    @extend %list;
+
     display: flex;
     flex-wrap: wrap;
     margin-top: calc(-1 * var(--card-set-gap));
@@ -45,4 +47,8 @@
     letter-spacing: 0.03em;
     text-align: center;
   }
+}
+
+.social-networks {
+  @extend %list;
 }

@@ -1,5 +1,7 @@
 /* Хедер список контактів */
 .header-contacts {
+    @extend %list;
+    
     display: flex;
     margin-left: auto;
 

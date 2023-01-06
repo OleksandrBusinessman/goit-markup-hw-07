@@ -1,5 +1,7 @@
 /* Хедер навігація по сайту */
 .site-nav {
+    @extend %list;
+    
     display: flex;
 
     .site-nav__item:not(:last-child) {

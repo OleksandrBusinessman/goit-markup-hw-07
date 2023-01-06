@@ -1,5 +1,7 @@
 /* Секція наші сильні якості */
 .strengths {
+    @extend %list;
+    
     display: flex;
     flex-wrap: wrap;
     margin-top: calc(-1 * var(--card-set-gap));

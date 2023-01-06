@@ -8,6 +8,8 @@
 }
 
 .regular-customers__list {
+    @extend %list;
+    
     display: flex;
 
     .regular-customers__item:not(:last-child) {

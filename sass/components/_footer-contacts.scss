@@ -1,4 +1,8 @@
 /* Футер контакти */
+.footer-contacts {
+    @extend %list;
+}
+
 .footer-contacts__item {
     display: flex;
 }

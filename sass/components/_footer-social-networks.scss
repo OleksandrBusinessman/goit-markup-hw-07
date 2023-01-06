@@ -8,6 +8,10 @@
     color: var(--color-white);
 }
 
+.social-networks {
+    @extend %list;
+}
+
 .social-networks--white-color {
     color: var(--color-white);
 }

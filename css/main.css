@@ -281,7 +281,7 @@ summary {
 }
 
 /* Скидання налаштувань за замовчуванням */
-.list {
+.data-list, .footer-contacts, .regular-customers__list, .social-networks, .our-team .cards-list, .we-do .img, .strengths, .header-contacts, .site-nav {
   list-style: none;
   padding-left: 0;
   margin: 0;

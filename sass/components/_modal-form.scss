@@ -11,6 +11,10 @@
     color: var(--color-secondary);
 }
 
+.data-list {
+    @extend %list;
+}
+
 .form-modal__button {
     @extend %button;
     
