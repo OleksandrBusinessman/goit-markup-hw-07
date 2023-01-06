@@ -1,5 +1,7 @@
 /* Футер лого */
 .footer__logo {
+    @extend %logo;
+
     margin-bottom: 28px;
 
     .logo__studio-white {

@@ -1,5 +1,7 @@
 /* Футер список соц мереж */
 .social-networks-box__text {
+    @extend %title-uppercase;
+    
     display: block;
     margin-bottom: 20px;
 

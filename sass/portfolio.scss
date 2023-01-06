@@ -1,19 +1,14 @@
 // Утиліти
 @import './base/normalize';
 @import './utils/variables';
-@import './utils/reset';
+@import './utils/resets';
 @import './utils/visually-hidden';
 
 // Базові налаштування
 @import './base/basic-settings';
 
 // Шаблони
-@import './reuse/logo';
-
-@import './utils/placeholders';
-
-@import './reuse/title-uppercase';
-@import './reuse/social-networks';
+@import './reuse/templates';
 
 // Компоненти
 // Хедер

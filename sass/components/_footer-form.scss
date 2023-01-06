@@ -3,6 +3,8 @@
     margin-left: auto;
 
     .footer-form__text {
+        @extend %title-uppercase;
+        
             margin-bottom: 20px;
     
             color: var(--color-white);
@@ -47,6 +49,7 @@
 
 .footer-form__button {
     @extend %button;
+    
     display: flex;
     align-items: center;
     justify-content: center;

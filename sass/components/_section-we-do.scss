@@ -17,6 +17,8 @@
     flex-basis: calc(100% / 3 - var(--card-set-gap));
 
     .img__caption {
+        @extend %title-uppercase;
+        
             position: absolute;
             bottom: 0;
             margin-bottom: 0;
