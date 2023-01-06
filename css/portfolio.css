@@ -281,13 +281,13 @@ summary {
 }
 
 /* Скидання налаштувань за замовчуванням */
-.social-networks, .footer-contacts, .examples, .filters, .header-contacts, .site-nav {
+.footer-contacts, .examples, .filters, .header-contacts, .site-nav, .social-networks {
   list-style: none;
   padding-left: 0;
   margin: 0;
 }
 
-.link {
+.footer-contacts__link, .footer__logo, .examples__link, .header-contacts__link, .site-nav__link, .header__logo, .social-networks__link {
   text-decoration: none;
   color: inherit;
 }

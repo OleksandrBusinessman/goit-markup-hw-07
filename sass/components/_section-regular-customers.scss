@@ -27,6 +27,8 @@
 }
 
 .regular-customers__link {
+    @extend %link;
+    
     display: flex;
     align-items: center;
     justify-content: center;

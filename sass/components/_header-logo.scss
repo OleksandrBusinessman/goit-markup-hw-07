@@ -1,6 +1,7 @@
 /* Хедер лого */
 .header__logo {
     @extend %logo;
+    @extend %link;
 
     padding-top: 24px;
     padding-bottom: 25px;

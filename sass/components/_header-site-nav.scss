@@ -10,6 +10,8 @@
 }
 
 .site-nav__link {
+    @extend %link;
+    
     position: relative;
     display: block;
     padding-top: 32px;
