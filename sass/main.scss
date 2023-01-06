@@ -7,11 +7,13 @@
 // Базові налаштування
 @import './base/basic-settings';
 
-// Компоненти які перевикористовуються
+// Шаблони
 @import './reuse/logo';
 @import './reuse/section-title';
 @import './reuse/title-uppercase';
-@import './reuse/button';
+
+@import './utils/placeholders';
+
 @import './reuse/social-networks';
 
 // Компоненти

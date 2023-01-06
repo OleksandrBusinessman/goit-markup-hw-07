@@ -12,6 +12,7 @@
 }
 
 .form-modal__button {
+    @extend %button;
     display: block;
     margin-left: auto;
     margin-right: auto;

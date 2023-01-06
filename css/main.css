@@ -376,8 +376,7 @@ img {
   text-transform: uppercase;
 }
 
-/* Кнопка */
-.button {
+.form-modal__button, .footer-form__button, .hero .button {
   width: 200px;
   height: 50px;
   font-weight: 700;
@@ -394,7 +393,7 @@ img {
   transition: background-color var(--anim-dur) var(--main-cubic), box-shadow var(--anim-dur) var(--main-cubic);
   transition: background-color var(--anim-dur) var(--main-cubic), box-shadow var(--anim-dur) var(--main-cubic), -webkit-box-shadow var(--anim-dur) var(--main-cubic);
 }
-.button:hover, .button:focus {
+.form-modal__button:hover, .footer-form__button:hover, .hero .button:hover, .form-modal__button:focus, .footer-form__button:focus, .hero .button:focus {
   background-color: var(--color-button-active);
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -603,7 +602,6 @@ img {
   text-transform: uppercase;
   color: var(--color-white);
 }
-
 /* Секція наші сильні якості */
 .strengths {
   display: -webkit-box;
