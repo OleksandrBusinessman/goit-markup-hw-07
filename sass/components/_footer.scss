@@ -6,8 +6,7 @@
     background-color: var(--color-bg-dark);
 
     .footer__container {
-            display: flex;
-            align-items: baseline;
+        @include centeringFlexbox($al-items: baseline, $just-cont: flex-start);
         }
     
         .footer__blok {

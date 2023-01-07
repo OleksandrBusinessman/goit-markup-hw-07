@@ -12,9 +12,8 @@
 
 .header-contacts__link {
     @extend %link;
-    
-    display: flex;
-    align-items: center;
+    @include centeringFlexbox($just-cont: flex-start);
+
     padding-top: 32px;
     padding-bottom: 32px;
 

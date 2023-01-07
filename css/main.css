@@ -265,7 +265,7 @@ summary {
 /* Змінні */
 :root {
   --card-set-gap: 30px;
-  --anim-dur: 1000ms;
+  --anim-dur: 250ms;
   --main-cubic: cubic-bezier(0.4, 0, 0.2, 1);
   --color-primary: #757575;
   --color-secondary: #212121;
@@ -453,6 +453,9 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
 }
 .header .header__nav {
   display: -webkit-box;
@@ -555,6 +558,9 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   padding-top: 32px;
   padding-bottom: 32px;
   font-weight: 500;
@@ -783,6 +789,9 @@ img {
   -webkit-box-align: baseline;
       -ms-flex-align: baseline;
           align-items: baseline;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
 }
 .footer .footer__blok {
   margin-right: 70px;
@@ -853,6 +862,9 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
 }
 
 .footer-form__input {
@@ -973,19 +985,19 @@ img {
 
 /* Кнопка закрити модалку  */
 .button-close {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   position: absolute;
   top: 8px;
   right: 8px;
   padding: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   width: 30px;
   height: 30px;
   cursor: pointer;
@@ -1035,7 +1047,6 @@ img {
 }
 
 .data-list__item:last-child {
-  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1045,6 +1056,7 @@ img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  position: relative;
   margin-bottom: 30px;
 }
 

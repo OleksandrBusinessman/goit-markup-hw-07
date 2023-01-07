@@ -4,8 +4,7 @@
     
     /* Хедер головна навігація */
         .header__nav-wrapper {
-            display: flex;
-            align-items: center;
+            @include centeringFlexbox($just-cont: flex-start);
         }
     
         .header__nav {

@@ -11,8 +11,7 @@
         }
 
                 .footer-form__box {
-                    display: flex;
-                    align-items: center;
+                    @include centeringFlexbox($just-cont: flex-start);
                 }
 }
 
@@ -50,10 +49,8 @@
 .footer-form__button {
     @extend %button;
     
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
+    @include centeringFlexbox();
+    
     .button__icon {
             margin-left: 10px;
         }

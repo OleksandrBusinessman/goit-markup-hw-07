@@ -28,11 +28,8 @@
 
 .regular-customers__link {
     @extend %link;
+    @include centeringFlexbox();
     
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
     width: 170px;
     height: 92px;
     border: 1px solid var(--color-icon-bg);

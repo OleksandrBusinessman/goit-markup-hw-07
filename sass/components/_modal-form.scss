@@ -37,10 +37,9 @@
 }
 
 .data-list__item:last-child {
+    @include centeringFlexbox();
+
     position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     margin-bottom: 30px;
 }
 

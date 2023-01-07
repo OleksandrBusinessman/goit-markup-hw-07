@@ -1,9 +1,8 @@
 /* Фільтри */
 .filters {
     @extend %list;
+    @include centeringFlexbox();
     
-    display: flex;
-    justify-content: center;
     margin-bottom: 50px;
 
     .filters__item:not(:last-child) {
